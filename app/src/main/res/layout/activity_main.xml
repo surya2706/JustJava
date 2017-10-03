@@ -32,6 +32,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginLeft="8dp"
         android:text="Order"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:onClick="submitOrder"/>
 
 </LinearLayout>
