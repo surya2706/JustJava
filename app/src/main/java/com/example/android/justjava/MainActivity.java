@@ -9,6 +9,8 @@ import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity {
 
+    int quantity = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,9 +21,7 @@ public class MainActivity extends AppCompatActivity {
      * This method is called when the ORDER button is clicked
      */
 
-    public void submitOrder(View view) {
-        int quantity = 2;
-        display(quantity);
+    public void submitOrder(View view){
         displayPrice(quantity * 5);
     }
 
@@ -29,14 +29,14 @@ public class MainActivity extends AppCompatActivity {
     * This method increments the quantity value on pressing + button
     * */
     public void increment(View view) {
-        int quantity = 3;
+        quantity += 1;
         display(quantity);
     }
     /*
     * This methods decrements the quantity value on pressing - button
      */
     public void decrement(View view) {
-        int quantity = 1;
+        quantity -= 1;
         display(quantity);
     }
     /*
